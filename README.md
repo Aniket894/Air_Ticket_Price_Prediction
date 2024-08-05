@@ -157,6 +157,7 @@ The data transformation file is used to perform exploratory data analysis (EDA),
 ## 7. Model Training
 
 The model training file is used to train the model with various regression algorithms, saving the best model as a pickle file (.pkl) in the artifacts folder, and storing all models.
+![download (2)](https://github.com/user-attachments/assets/84025eb0-fc50-4cf7-83a2-2d9024ff0173)
 
 
 ## 8. Training Pipeline
