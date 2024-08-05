@@ -139,6 +139,7 @@ AirlineTicketPricePrediction/
 ├── README.md
 └── setup.py
 
+```
 
 
 ## 5. Data Ingestion
