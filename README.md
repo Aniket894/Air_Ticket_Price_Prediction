@@ -57,19 +57,35 @@ The project aims to predict airline ticket prices based on various features such
 **Arrival Time**: The time of arrival.
 
 **Destination City**: The city where the flight lands.
-Class: The class of travel (economy, business).
-Duration: The total duration of the flight.
-Days Left: The number of days left before the flight date.
-Price: The price of the ticket.
-3. Project Objectives
-Data Ingestion: Load and explore the dataset.
-Data Transformation: Clean, preprocess, and transform the dataset for modeling.
-Model Training: Train various regression models to predict airline ticket prices.
-Pipeline Creation: Develop a pipeline for data transformation, model training, and prediction.
-Supporting Scripts: Provide scripts for setup, exception handling, utilities, and logging.
-4. Project Structure
-scss
-Copy code
+
+**Class**: The class of travel (economy, business).
+
+**Duration**: The total duration of the flight.
+
+**Days Left**: The number of days left before the flight date.
+
+**Price**: The price of the ticket.
+
+
+
+## 3. Project Objectives
+
+
+**Data Ingestion**: Load and explore the dataset.
+
+**Data Transformation**: Clean, preprocess, and transform the dataset for modeling.
+
+**Model Training**: Train various regression models to predict airline ticket prices.
+
+**Pipeline Creation**: Develop a pipeline for data transformation, model training, and prediction.
+
+**Supporting Scripts**: Provide scripts for setup, exception handling, utilities, and logging.
+
+
+
+## 4. Project Structure
+
+```
 AirlineTicketPricePrediction/
 │
 ├── artifacts/
@@ -114,7 +130,7 @@ AirlineTicketPricePrediction/
 │   └── results.html
 │
 ├── static/
-│   ├── flight_prices.jpeg
+│   ├── plane (1).jpeg
 │   └── style.css
 │
 ├── app.py
@@ -122,37 +138,72 @@ AirlineTicketPricePrediction/
 ├── requirements.txt
 ├── README.md
 └── setup.py
-5. Data Ingestion
+
+
+
+## 5. Data Ingestion
+
 The data ingestion file is used to ingest the data from notebook/data, split it into train, test, and raw CSV files, and save them into the artifacts folder.
 
-6. Data Transformation
+
+
+## 6. Data Transformation
+
 The data transformation file is used to perform exploratory data analysis (EDA), including encoding and preprocessing the data, and saving the encoded data.
 
-7. Model Training
+
+
+## 7. Model Training
+
 The model training file is used to train the model with various regression algorithms, saving the best model as a pickle file (.pkl) in the artifacts folder, and storing all models.
 
-8. Training Pipeline
+
+## 8. Training Pipeline
+
 This file is used to run data ingestion, data transformation, and model training scripts in sequence.
 
-9. Prediction Pipeline
+
+## 9. Prediction Pipeline
+
 This file is used to predict ticket prices using the best_model.pkl file and preprocess the data using preprocessor.pkl.
 
-10. Static
-static/style.css: Provides the theme for the index.html and results.html pages.
-11. Templates
-templates/index.html: Creates a form to get data input from the user.
-templates/results.html: Displays the predicted results of the model.
-12. Flask (app.py)
+
+## 10. Static
+
+**static/style.css**: Provides the theme for the index.html and results.html pages.
+
+
+## 11. Templates
+
+**templates/index.html**: Creates a form to get data input from the user.
+
+**templates/results.html**: Displays the predicted results of the model.
+
+
+## 12. Flask (app.py)
+
 This file posts data from the form (index.html), predicts the results using prediction_pipeline.py, and displays the results.
 
-13. Logger
+![airplane_Ticket_Price_Prediction](https://github.com/user-attachments/assets/ba00f4ed-498a-43bf-823d-649e8e4b9873)
+
+![airplane_ticket_price_Prediction_results](https://github.com/user-attachments/assets/4d168d1a-4d9c-4d1d-8e97-3f286e6e55df)
+
+
+## 13. Logger
+
 This file saves logs, recording the execution flow and errors.
 
-14. Exception Handling
+
+## 14. Exception Handling
+
 This file contains the exception handling code for errors, ensuring they are caught and logged appropriately.
 
-15. Utils
+
+## 15. Utils
+
 This file contains utility functions used throughout the project for common tasks, such as creating directories.
 
-16. Conclusion
+
+## 16. Conclusion
+
 This documentation provides a comprehensive overview of the "Airline Ticket Price Prediction" project, covering data ingestion, transformation, model training, pipeline creation, and supporting scripts. The provided code examples illustrate the implementation of various components, ensuring a robust and scalable project structure.
